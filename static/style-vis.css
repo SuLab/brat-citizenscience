@@ -86,7 +86,7 @@ path {
 
 /* this should likely match span font */
 .span_type_label {
-  font-size: 11px;
+  /*font-size: 11px;*/
   font-family: 'PT Sans Caption', sans-serif;
 }
 /* this should likely match arc font */
@@ -346,10 +346,14 @@ fieldset {
   border-radius: 5px;
   /* to prevent border from running into legend */
   margin-top: 5px;
+  font-size: 1.3em;
+}
+fieldset.dialog_section{
+  margin-top: 15px;
 }
 fieldset legend {
   font-weight: bold;
-  font-size: 90%;
+  /*font-size: 90%;*/
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -382,6 +386,7 @@ fieldset legend {
 
 #span_selected, #arc_origin, #arc_target {
   font-weight: bold;
+  text-align: center;
 }
 
 #commentpopup {
@@ -472,10 +477,12 @@ fieldset legend {
   overflow: auto;
   width: 100%;
   height: 100%;
+  padding-top: 20px;
 }
 
 #span_highlight_link, #arc_highlight_link, #viewspan_highlight_link {
   float: right;
+  visibility: hidden;
 }
 
 .unselectable {

@@ -634,7 +634,7 @@ var AnnotatorUI = (function($, window, undefined) {
           } else {
             hideFrame = 'none';
           }
-          spanForm.dialog('option', { title: 'New Annotation' });
+          spanForm.dialog('option', { title: '' });
         }
         if (hideFrame == 'event') {
           $('#span_event_section').hide()
@@ -1439,7 +1439,7 @@ var AnnotatorUI = (function($, window, undefined) {
 
           $('#arc_form_reselect, #arc_form_delete, #arc_form_reverse').hide();
 
-          arcForm.dialog('option', { title: 'New Annotation' });
+          arcForm.dialog('option', { title: '' });
         }
         if (reversalPossible) {
           $('#arc_form_reverse').show();
@@ -2409,7 +2409,7 @@ var AnnotatorUI = (function($, window, undefined) {
 
       dispatcher.post('initForm', [spanForm, {
           alsoResize: '#entity_and_event_wrapper',
-          width: 760,
+          width: 500,
           buttons: [{
               id: 'span_form_add_fragment',
               text: "Add Frag.",

@@ -11,6 +11,15 @@ body .ui-widget {
   font-size: 0.9em; /* override jQuery UI */
 }
 
+body .ui-button-text{
+  font-size: 1.3em;
+}
+
+body .ui-dialog-buttonset {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+}
 
 #navbuttons * {
   vertical-align: middle;
@@ -201,7 +210,7 @@ input.invalid_value {
 
 /* BEGIN new entity and event dialog style */
 .split_wrapper {
-  height: 300px;
+  /*height: 300px;*/
   /* HACK tweaking to avoid overflows. */
   padding-bottom: 2.5em;
   /* end HACK */
@@ -263,7 +272,8 @@ div.scroll_wrapper_lower div {
   width: 100%;
   height: 100%;
   border-style: inset inset none none;
-  border-width: 1px;
+  border-width: 0px;
+  padding-left: 150px;
 }
 div.scroll_wrapper_upper div.scroller {
   border-style: inset inset inset none;
@@ -271,6 +281,10 @@ div.scroll_wrapper_upper div.scroller {
 /* special-case visual tweak; not sure why this is necessary */
 #span_search_fieldset {
   margin-bottom: 0.5em;
+  visibility: hidden;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
 } 
 /* END new entity and event dialog style */
 

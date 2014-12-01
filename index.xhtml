@@ -595,8 +595,8 @@
     <!-- Span dialog (view+edit) -->
     <form id="span_form" class="dialog" title="Span">
       <!-- Span dialog annotated text -->
-      <fieldset id="span_selected_fset">
-        <legend>Text</legend>
+      <fieldset id="span_selected_fset" class="dialog_section">
+        <legend>You selected the following text:</legend>
         <a target="brat_linked" id="span_highlight_link" href="#">Link</a>
         <div id="span_selected"/>
       </fieldset>
@@ -606,10 +606,11 @@
         <div id="span_search_links"/>
       </fieldset>
       <!-- Span dialog type selector -->
-      <fieldset>
+      <fieldset class="dialog_section">
+        <legend>What kind of word or phrase is this?</legend>
         <div id="entity_and_event_wrapper" class="split_wrapper">
           <div id="span_entity_section" class="wrapper_half_left">
-            <div id="entity_label" class="label-like">Entity type</div>
+            <div id="entity_label" class="label-like"><!--Entity type--></div>
             <div id="entity_types" class="scroll_wrapper_upper">
               <div class="scroller"/>
             </div>
@@ -626,11 +627,11 @@
             <div id="event_types" class="scroll_wrapper_upper">
               <div class="scroller"/>
             </div>
-            <div id="event_attribute_label"
+            <!--<div id="event_attribute_label"
                  class="wrapper_lower_label label-like">Event attributes</div>
             <div id="event_attributes" class="scroll_wrapper_lower">
               <div class="scroller small-buttons"/>
-            </div>
+            </div>-->
           </div>
         </div>
       </fieldset>
@@ -653,14 +654,14 @@
         </div>
       </fieldset>
       <!-- Span dialog notes -->
-      <fieldset>
+      <!--<fieldset>
         <legend>Notes</legend>
         <div id="span_notes_container">
           <input id="span_notes" class="borderless"/>
           <input id="clear_span_notes_button" type="button"
                  value="&#x2715;" title="Clear notes"/>
         </div>
-      </fieldset>
+      </fieldset>-->
     </form>
     <!-- Rapid mode span dialog -->
     <form id="rapid_span_form" class="dialog" title="Span type">
